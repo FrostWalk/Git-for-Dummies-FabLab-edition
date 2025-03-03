@@ -1,4 +1,4 @@
-#import "@preview/fletcher:0.5.1" as fletcher: diagram, node, edge, shapes, draw
+#import "@preview/fletcher:0.5.5" as fletcher: diagram, node, edge, shapes, draw
 #import fletcher.shapes: diamond
 #import "multi-label.typ" : multi_label
 #import "utils.typ": alignment_to_coordinates, generate_label
@@ -8,7 +8,7 @@
     if remote == none {
         // Single label node
         node(near, [#name], corner-radius: 2pt, fill: color, stroke: lbl_stroke)
-    } else if type(remote) == "string" {
+    } else if type(remote) == type("") {
         // Double label node
         node(near,multi_label((name,remote),lbl_stroke).node,inset:0pt, corner-radius:3pt, fill: color, stroke: lbl_stroke)
     } else if type(remote) == array {
@@ -66,7 +66,7 @@
             }
 
             // make the message
-            if type(c) == "string" and c.len() > 0 {
+            if type(c) == type("") and c.len() > 0 {
                 let lbl =  generate_label(branch:name,commit-number: i)
                 node(
                     (rel: alignment_to_coordinates(alignment), to: lbl),

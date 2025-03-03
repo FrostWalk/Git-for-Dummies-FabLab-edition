@@ -1,8 +1,8 @@
-#import "@preview/touying:0.5.2": *
+#import "@preview/touying:0.6.1": *
 #import themes.university: *
-#import "@preview/cetz:0.2.2"
-#import "@preview/fletcher:0.5.1" as fletcher: node, edge
-#import "@preview/ctheorems:1.1.2": *
+#import "@preview/cetz:0.3.3"
+#import "@preview/fletcher:0.5.5" as fletcher: node, edge
+#import "@preview/ctheorems:1.1.3": *
 #import "@preview/numbly:0.1.0": numbly
 
 #import "/slides/components/code-blocks.typ": code-block, window-titlebar

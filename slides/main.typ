@@ -1,8 +1,8 @@
-#import "@preview/touying:0.5.2": *
+#import "@preview/touying:0.6.1": *
 #import themes.university: *
-#import "@preview/cetz:0.2.2"
-#import "@preview/fletcher:0.5.1" as fletcher: node, edge
-#import "@preview/ctheorems:1.1.2": *
+#import "@preview/cetz:0.3.3"
+#import "@preview/fletcher:0.5.5" as fletcher: node, edge
+#import "@preview/ctheorems:1.1.3": *
 #import "@preview/numbly:0.1.0": numbly
 
 #import "/slides/components/code-blocks.typ": code-block, window-titlebar
@@ -51,10 +51,10 @@
   config-info(    
     title: [Git for Dummies],
     subtitle: [Slides],
-    author: [Toniolo Marco],
+    author: [Frigerio Federico & Toniolo Marco],
     date: datetime.today(),
-    institution: [Università degli Studi di Trento],
-    // logo: emoji.crab,
+    institution: [FabLab UniTrento],
+    //logo: emoji.crab,
   ),
 )
 #set text(size: 18pt)
@@ -75,9 +75,9 @@
 #components.adaptive-columns(outline(title: none, indent: 0em))
 
 
-= Theory
+= Teoria
 
-== Introduction
+== Introduzione
 
 #include "./theory/introduction.typ"
 
@@ -100,8 +100,6 @@
 == Fork
 
 #include "./theory/fork.typ"
-
-= Practice
 
 == Configuration<config>
 
@@ -143,9 +141,36 @@
 
 #include "./practice/remote.typ"
 
-= Advanced
+= Comandi avanzati
 
+== Clean
+
+#include "./advanced/clean.typ"
+
+== Interactive Staging
+
+#include "./advanced/interactive-staging.typ"
+
+== Reflog
+
+#include "./advanced/reflog.typ"
+
+== Reset
+
+#include "./advanced/reset.typ"
+
+== Revert
+
+#include "./advanced/revert.typ"
+
+== Squash
+
+#include "./advanced/squash.typ"
+
+== stash
+
+#include "./advanced/stash.typ"
 
 #slide[
-#bibliography("refs.yaml", style: "institute-of-electrical-and-electronics-engineers", title: "References")
+  #bibliography("refs.yaml", style: "institute-of-electrical-and-electronics-engineers", title: "References")
 ]

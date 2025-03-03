@@ -1,4 +1,4 @@
-#import "@preview/fletcher:0.4.4" as fletcher: diagram, node, edge, draw
+#import "@preview/fletcher:0.5.5" as fletcher: diagram, node, edge, draw
 #import "utils.typ" : calc_width
 
 #let cell(..texts, stroke) = {
